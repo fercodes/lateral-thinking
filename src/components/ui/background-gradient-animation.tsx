@@ -3,8 +3,8 @@ import { cn } from '@/lib/utils';
 import { useEffect, useRef, useState } from 'react';
 
 export const BackgroundGradientAnimation = ({
-  gradientBackgroundStart = 'rgb(108, 0, 162)',
-  gradientBackgroundEnd = 'rgb(0, 17, 82)',
+  gradientBackgroundStart = 'rgb(0, 0, 0)',
+  gradientBackgroundEnd = 'rgb(0, 0, 0)',
   firstColor = '18, 113, 255',
   secondColor = '221, 74, 255',
   thirdColor = '100, 220, 255',
@@ -78,6 +78,15 @@ export const BackgroundGradientAnimation = ({
       const rect = interactiveRef.current.getBoundingClientRect();
       setTgX(event.clientX - rect.left);
       setTgY(event.clientY - rect.top);
+    }
+  };
+
+  const handleTouchMove = (event: React.TouchEvent<HTMLDivElement>) => {
+    if (interactiveRef.current && event.touches.length > 0) {
+      const rect = interactiveRef.current.getBoundingClientRect();
+      const touch = event.touches[0];
+      setTgX(touch.clientX - rect.left);
+      setTgY(touch.clientY - rect.top);
     }
   };
 
@@ -168,6 +177,7 @@ export const BackgroundGradientAnimation = ({
           <div
             ref={interactiveRef}
             onMouseMove={handleMouseMove}
+            onTouchMove={handleTouchMove}
             className={cn(
               `absolute [background:radial-gradient(circle_at_center,_rgba(var(--pointer-color),_0.8)_0,_rgba(var(--pointer-color),_0)_50%)_no-repeat]`,
               `[mix-blend-mode:var(--blending-value)] w-full h-full -top-1/2 -left-1/2`,

@@ -3,8 +3,8 @@ import PrimaryButton from '@/components/ui/PrimaryButton';
 
 export default function About() {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-950 via-blue-600 to-red-700 px-4 py-16">
-      <div className="w-full max-w-5xl bg-white/10 rounded-2xl shadow-2xl backdrop-blur-lg flex flex-col md:flex-row overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center px-4 py-16 relative z-20">
+      <div className="w-full max-w-5xl rounded-2xl shadow-2xl backdrop-blur-lg flex flex-col md:flex-row overflow-hidden">
         {/* Left Side*/}
         <div className="md:w-1/2 p-10 flex flex-col justify-center bg-gradient-to-br from-blue-900/80 to-blue-800/70">
           <h1 className="text-4xl md:text-5xl text-white mb-6 drop-shadow-lg font-bold font-sans">
@@ -26,7 +26,7 @@ export default function About() {
           </div>
         </div>
         {/* Right Side*/}
-        <div className="md:w-1/2 p-10 flex flex-col justify-center bg-white/5 border-l border-white/10">
+        <div className="md:w-1/2 p-10 flex flex-col justify-center bg-white/2 border-l border-black/2">
           <div>
             <h2 className="text-2xl md:text-3xl text-white mb-6 font-bold font-sans">
               Nuestros servicios

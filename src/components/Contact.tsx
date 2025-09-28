@@ -3,10 +3,13 @@ const instagramLink = 'https://instagram.com/your-profile';
 
 export default function Contact() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
-      <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center space-y-6 max-w-sm w-full">
-        <h1 className="text-2xl font-bold text-gray-800 mb-2">Contáctanos</h1>
-        <p className="text-gray-500 text-center mb-4">
+    <section
+      className="min-h-screen flex items-center justify-center relative z-20"
+      id="contact"
+    >
+      <div className="rounded-xl shadow-lg p-8 flex flex-col items-center space-y-6 max-w-sm w-full">
+        <h1 className="text-2xl font-bold text-white mb-2">Contáctanos</h1>
+        <p className="text-white text-center mb-4">
           Construyamos juntos tus ideas.
         </p>
         <div className="flex space-x-6">
@@ -42,6 +45,6 @@ export default function Contact() {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

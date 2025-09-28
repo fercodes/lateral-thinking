@@ -1,5 +1,5 @@
-const whatsappLink = 'https://wa.me/your-number';
-const instagramLink = 'https://instagram.com/your-profile';
+const whatsappLink = 'https://wa.link/judlk2';
+const instagramLink = 'https://instagram.com/lateralthinking.dev';
 
 export default function Contact() {
   return (

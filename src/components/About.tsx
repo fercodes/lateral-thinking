@@ -6,7 +6,7 @@ export default function About() {
     <section className="min-h-screen flex items-center justify-center px-4 py-16 relative z-20">
       <div className="w-full max-w-5xl rounded-2xl shadow-2xl backdrop-blur-lg flex flex-col md:flex-row overflow-hidden">
         {/* Left Side*/}
-        <div className="md:w-1/2 p-10 flex flex-col justify-center bg-gradient-to-br from-blue-900/80 to-blue-800/70">
+        <div className="md:w-1/2 p-10 flex flex-col justify-center">
           <h1 className="text-4xl md:text-5xl text-white mb-6 drop-shadow-lg font-bold font-sans">
             Sobre nosotros
           </h1>

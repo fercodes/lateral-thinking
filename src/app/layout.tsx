@@ -1,7 +1,7 @@
-import './globals.css'; // Tailwind base styles
+import './globals.css';
 import Navbar from '@/components/Navbar';
 import type { Metadata } from 'next';
-import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation';
+// import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation';
 
 export const metadata: Metadata = {
   title: 'Lateral Thinking',
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <BackgroundGradientAnimation containerClassName="fixed inset-0 z-10" />
+        {/* <BackgroundGradientAnimation containerClassName="fixed inset-0 z-10" /> */}
         <Navbar />
         <main>{children}</main>
       </body>

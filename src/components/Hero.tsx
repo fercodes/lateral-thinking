@@ -5,7 +5,7 @@ import SecondaryButton from '@/components/ui/SecondaryButton';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative h-screen w-full px-4">
+    <section id="hero" className="relative h-screen w-full px-4 bg-black">
       <div className="relative top-1/2 -translate-y-1/2 text-white space-y-16 text-center pointer-events-none z-10">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-sans">
           Lateral Thinking

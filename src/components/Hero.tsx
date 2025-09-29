@@ -1,7 +1,7 @@
 'use client';
 
 import PrimaryButton from '@/components/ui/PrimaryButton';
-import SecondaryButton from '@/components/ui/SecondaryButton';
+//import SecondaryButton from '@/components/ui/SecondaryButton';
 
 export default function Hero() {
   return (
@@ -27,6 +27,7 @@ export default function Hero() {
         >
           Contáctanos
         </PrimaryButton>
+        {/*
         <SecondaryButton
           onClick={() => {
             const projects = document.getElementById('projects');
@@ -35,6 +36,7 @@ export default function Hero() {
         >
           Mira nuestro trabajo
         </SecondaryButton>
+        */}
       </div>
     </section>
   );

@@ -51,7 +51,7 @@ export default function About() {
                 if (contact) contact.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              Let's build your business together
+              {"Let's build your business together"}
             </PrimaryButton>
           </div>
         </div>

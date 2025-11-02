@@ -10,7 +10,7 @@ export default function Contact() {
       <div className="rounded-xl shadow-lg p-8 flex flex-col items-center space-y-6 max-w-sm w-full">
         <h1 className="text-2xl font-bold text-white mb-2">Contact us</h1>
         <p className="text-white text-center mb-4">
-          Let's build your ideas together.
+          {"Let's build your ideas together."}
         </p>
         <div className="flex space-x-6">
           <a

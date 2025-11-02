@@ -8,20 +8,19 @@ export default function About() {
         {/* Left Side*/}
         <div className="md:w-1/2 p-10 flex flex-col justify-center">
           <h1 className="text-4xl md:text-5xl text-white mb-6 drop-shadow-lg font-bold font-sans">
-            Sobre nosotros
+            About us
           </h1>
           <p className="text-lg md:text-xl text-blue-100 mb-6">
-            Creamos soluciones digitales elegantes, escalables y robustas para
-            negocios ambiciosos como el tuyo.
+            We build elegant, scalable, and robust digital solutions for
+            ambitious businesses like yours.
           </p>
           <div className="mt-4">
             <h2 className="text-2xl font-bold text-white mb-2 font-sans">
-              ¿Qué nos diferencia?
+              What sets us apart?
             </h2>
             <p className="text-blue-100">
-              Compromiso y calidad. Si tienes una idea, nosotros la programamos.
-              Queremos ser tu equipo de confianza para proyectos tecnológicos,
-              grandes o pequeños.
+              Commitment and quality. If you have an idea, we code it. We want
+              to be your trusted team for tech projects, big or small.
             </p>
           </div>
         </div>
@@ -29,25 +28,19 @@ export default function About() {
         <div className="md:w-1/2 p-10 flex flex-col justify-center bg-white/2 border-l border-black/2">
           <div>
             <h2 className="text-2xl md:text-3xl text-white mb-6 font-bold font-sans">
-              Nuestros servicios
+              Our services
             </h2>
             <ul className="text-blue-100 space-y-2 mb-8">
-              <li>• Páginas web profesionales y tiendas virtuales</li>
-              <li>• Aplicaciones móviles y de escritorio</li>
-              <li>• Diseño UI/UX</li>
+              <li>• Professional websites and online stores</li>
+              <li>• Mobile and desktop apps</li>
+              <li>• UI/UX design</li>
               <li>
-                • Integración de Inteligencia Artificial, asistentes virtuales,
+                • Artificial Intelligence integration, virtual assistants,
                 chatbots
               </li>
-              <li>
-                • Sistemas empresariales (CRM, CMS, ERP, POS, automatización de
-                procesos)
-              </li>
-              <li>
-                • Integración de pasarelas de pago y soluciones de comercio
-                electrónico
-              </li>
-              <li>• Desarrollo de software personalizado</li>
+              <li>• Enterprise systems (CRM, CMS, ERP, process automation)</li>
+              <li>• Payment gateway integration and e-commerce solutions</li>
+              <li>• Custom software development</li>
             </ul>
           </div>
           <div></div>
@@ -58,7 +51,7 @@ export default function About() {
                 if (contact) contact.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              Construyamos tu negocio juntos
+              Let's build your business together
             </PrimaryButton>
           </div>
         </div>

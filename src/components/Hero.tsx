@@ -12,10 +12,10 @@ export default function Hero() {
         </h1>
         <div className="text-sm md:text-xl lg:text-xl font-sans space-y-4">
           <p>
-            Creamos software a medida. Para empresas que valoran la calidad,
-            seguridad y escalabilidad.
+            We build custom software. For companies that care about quality,
+            security and scalability.
           </p>
-          <p>Sitios web | Apps | Diseño UI/UX | Integración de IA</p>
+          <p>Websites | Apps | UI/UX design | AI integration</p>
         </div>
       </div>
       <div className="relative mt-[44vh] flex items-center justify-center gap-8 md:gap-16 lg:gap-24 z-10 pointer-events-auto">
@@ -25,7 +25,7 @@ export default function Hero() {
             if (contact) contact.scrollIntoView({ behavior: 'smooth' });
           }}
         >
-          Contáctanos
+          Contact us
         </PrimaryButton>
         {/*
         <SecondaryButton

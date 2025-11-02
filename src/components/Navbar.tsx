@@ -18,19 +18,19 @@ export default function Navbar() {
           {/* Desktop links */}
           <div className="hidden md:flex space-x-6">
             <Link href="/" className="hover:text-gray-300">
-              Inicio
+              Home
             </Link>
             <Link href="/about" className="hover:text-gray-300">
-              Sobre nosotros
+              About
             </Link>
             <Link href="/services" className="hover:text-gray-300">
-              Servicios
+              Services
             </Link>
             <Link href="/projects" className="hover:text-gray-300">
-              Proyectos
+              Projects
             </Link>
             <Link href="/contact" className="hover:text-gray-300">
-              Contacto
+              Contact
             </Link>
           </div>
           {/* Mobile menu button */}

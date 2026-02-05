@@ -145,7 +145,7 @@ export default function ExitIntent() {
     };
   }, [showPopup]);
 
-  // Exit intent detection
+  // Desktop: Exit intent detection (mouse leaving top)
   useEffect(() => {
     const handleMouseLeave = (e: MouseEvent) => {
       if (e.clientY <= 0 && !hasShown) {
@@ -154,8 +154,37 @@ export default function ExitIntent() {
       }
     };
 
-    document.addEventListener('mouseleave', handleMouseLeave);
+    // Only add on desktop (devices with mouse)
+    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      document.addEventListener('mouseleave', handleMouseLeave);
+    }
+
     return () => document.removeEventListener('mouseleave', handleMouseLeave);
+  }, [hasShown]);
+
+  // Mobile: Scroll depth trigger (when user scrolls 90% down the page)
+  useEffect(() => {
+    const handleScroll = () => {
+      if (hasShown) return;
+
+      const scrollPercent =
+        (window.scrollY /
+          (document.documentElement.scrollHeight - window.innerHeight)) *
+        100;
+
+      // Trigger at 90% scroll depth
+      if (scrollPercent > 90) {
+        setShowPopup(true);
+        setHasShown(true);
+      }
+    };
+
+    // Only add on mobile/touch devices
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      window.addEventListener('scroll', handleScroll);
+    }
+
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [hasShown]);
 
   const handleRedPill = () => {

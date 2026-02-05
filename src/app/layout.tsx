@@ -2,6 +2,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import type { Metadata } from 'next';
 import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation';
+import ExitIntent from '@/components/ExitIntent';
 
 export const metadata: Metadata = {
   title: 'Lateral Thinking',
@@ -19,6 +20,7 @@ export default function RootLayout({
         <BackgroundGradientAnimation containerClassName="fixed inset-0 z-10" />
         <Navbar />
         <main>{children}</main>
+        <ExitIntent />
       </body>
     </html>
   );

@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <BackgroundGradientAnimation containerClassName="fixed inset-0 z-10" />
+        {/* <BackgroundGradientAnimation containerClassName="fixed inset-0 z-10" /> */}
         <Navbar />
         <main>{children}</main>
         <ExitIntent />

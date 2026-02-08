@@ -25,15 +25,19 @@ export default function ExitIntent() {
 
     let timeMessage = '';
     if (hour >= 0 && hour < 6) {
-      timeMessage = 'Wake up.\nWe know why you stay awake at night.';
+      timeMessage =
+        'Wait! \nWorking late again? We get it, but there is a better way to spend your time. Let us show you how to work smarter, not harder.';
     } else if (hour >= 6 && hour < 18) {
-      timeMessage = 'Wake up.\nThe simulation has you.';
+      timeMessage =
+        'Wait! You need to wake up.\nWe know you have big dreams, but you keep getting stuck in the same routine. We can help you break free and achieve those dreams.';
     } else {
-      timeMessage = 'Wake up.\nAnother day wasted in the simulation.';
+      timeMessage =
+        'Wait! You need to wake up.\nAnother day doing repetitive tasks, right? We want to help you break free from that cycle.';
     }
 
     if (visitCount >= 1) {
-      timeMessage += "\nYou keep coming back.\nYou feel it, don't you?";
+      timeMessage +=
+        "\nMaybe it's time to take the red pill and see what we have to offer?";
     }
 
     setPersonalizedMessage(timeMessage);

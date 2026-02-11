@@ -5,67 +5,18 @@ import { useEffect, useState, useRef } from 'react';
 export default function ExitIntent() {
   const [showPopup, setShowPopup] = useState(false);
   const [hasShown, setHasShown] = useState(false);
-  const [personalizedMessage, setPersonalizedMessage] = useState('');
-  const [displayedText, setDisplayedText] = useState('');
   const [displayedMainText, setDisplayedMainText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
-  const [firstTypingComplete, setFirstTypingComplete] = useState(false);
   const [secondTypingComplete, setSecondTypingComplete] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animationRef = useRef<number | null>(null);
 
   const mainMessage =
-    "This is your last chance. After this, there is no turning back. You take the blue pill... you leave this site and miss out on top-notch software skills. You take the red pill... we dive into code, and we'll show you how deep our expertise goes.";
+    "Wake up. This is your last chance. After this, there is no turning back. You take the blue pill... you leave this site and miss out on top-notch software skills. You take the red pill... we dive into code, and we'll show you how deep our expertise goes.";
 
-  // Generate personalized message based on time and visits
+  // Typewriter effect for main message
   useEffect(() => {
-    const hour = new Date().getHours();
-    const visitCount = parseInt(localStorage.getItem('visitCount') || '0');
-    localStorage.setItem('visitCount', (visitCount + 1).toString());
-
-    let timeMessage = '';
-    if (hour >= 0 && hour < 6) {
-      timeMessage =
-        'Wait! \nWorking late again? We get it, but there is a better way to spend your time. Let us show you how to work smarter, not harder.';
-    } else if (hour >= 6 && hour < 18) {
-      timeMessage =
-        'Wait! You need to wake up.\nWe know you have big dreams, but you keep getting stuck in the same routine. We can help you break free and achieve those dreams.';
-    } else {
-      timeMessage =
-        'Wait! You need to wake up.\nAnother day doing repetitive tasks, right? We want to help you break free from that cycle.';
-    }
-
-    if (visitCount >= 1) {
-      timeMessage +=
-        "\nMaybe it's time to take the red pill and see what we have to offer?";
-    }
-
-    setPersonalizedMessage(timeMessage);
-  }, []);
-
-  // Typewriter effect for first message
-  useEffect(() => {
-    if (!showPopup || !personalizedMessage) return;
-
-    let index = 0;
-    const typingSpeed = 20;
-
-    const typeInterval = setInterval(() => {
-      if (index < personalizedMessage.length) {
-        setDisplayedText(personalizedMessage.substring(0, index + 1));
-        index++;
-      } else {
-        clearInterval(typeInterval);
-        setFirstTypingComplete(true);
-      }
-    }, typingSpeed);
-
-    return () => clearInterval(typeInterval);
-  }, [showPopup, personalizedMessage]);
-
-  // Typewriter effect for second message (starts after first is complete)
-  useEffect(() => {
-    if (!firstTypingComplete) return;
+    if (!showPopup) return;
 
     let index = 0;
     const typingSpeed = 20;
@@ -81,7 +32,7 @@ export default function ExitIntent() {
     }, typingSpeed);
 
     return () => clearInterval(typeInterval);
-  }, [firstTypingComplete]);
+  }, [showPopup]);
 
   // Blinking cursor effect
   useEffect(() => {
@@ -158,7 +109,6 @@ export default function ExitIntent() {
       }
     };
 
-    // Only add on desktop (devices with mouse)
     if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
       document.addEventListener('mouseleave', handleMouseLeave);
     }
@@ -176,14 +126,12 @@ export default function ExitIntent() {
           (document.documentElement.scrollHeight - window.innerHeight)) *
         100;
 
-      // Trigger at 90% scroll depth
       if (scrollPercent > 90) {
         setShowPopup(true);
         setHasShown(true);
       }
     };
 
-    // Only add on mobile/touch devices
     if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
       window.addEventListener('scroll', handleScroll);
     }
@@ -238,29 +186,16 @@ export default function ExitIntent() {
             </svg>
           </button>
 
-          {/* Text Container - Fixed height */}
+          {/* Text Container */}
           <div className="flex-1 flex flex-col justify-start">
-            {/* First Typewriter Text with Cursor - Left aligned */}
-            <p className="text-[#00FF41] text-left text-base mb-4 leading-relaxed font-mono px-2 tracking-wide whitespace-pre-line">
-              {displayedText}
-              {!firstTypingComplete && (
+            <p className="text-[#00FF41] text-left text-base mb-6 leading-relaxed font-mono px-2 tracking-wide whitespace-pre-line">
+              {displayedMainText}
+              {!secondTypingComplete && (
                 <span
                   className={`inline-block w-2 h-4 bg-[#00FF41] ml-1 ${showCursor ? 'opacity-100' : 'opacity-0'}`}
                 />
               )}
             </p>
-
-            {/* Second Typewriter Text with Cursor - Left aligned */}
-            {firstTypingComplete && (
-              <p className="text-[#00FF41] text-left text-base mb-6 leading-relaxed font-mono px-2 tracking-wide whitespace-pre-line">
-                {displayedMainText}
-                {!secondTypingComplete && (
-                  <span
-                    className={`inline-block w-2 h-4 bg-[#00FF41] ml-1 ${showCursor ? 'opacity-100' : 'opacity-0'}`}
-                  />
-                )}
-              </p>
-            )}
           </div>
 
           {/* Pills - styled buttons */}

@@ -1,3 +1,5 @@
+minimumReleaseAge: 3000
+
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - '@tailwindcss/oxide'

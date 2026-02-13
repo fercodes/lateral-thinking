@@ -1,14 +1,16 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
-import { useRouter, usePathname } from 'next/navigation';
+import { Link, useRouter, usePathname } from '@/i18n/navigation';
 import { Menu, X } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from '@/components/ui/LanguageSwitcher';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
+  const t = useTranslations('Navbar');
 
   const scrollTo = (id: string) => {
     setIsOpen(false);
@@ -25,21 +27,23 @@ export default function Navbar() {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="text-xl font-bold">
-            <Link href="/">Lateral Thinking</Link>
+            <Link href="/">{t('brand')}</Link>
           </div>
 
           {/* Desktop links */}
-          <div className="hidden md:flex space-x-6">
-            <button onClick={() => scrollTo('home')} className="cursor-pointer hover:text-gray-300">Home</button>
-            <button onClick={() => scrollTo('about')} className="cursor-pointer hover:text-gray-300">About</button>
-            <button onClick={() => scrollTo('services')} className="cursor-pointer hover:text-gray-300">Services</button>
-            <button onClick={() => scrollTo('projects')} className="cursor-pointer hover:text-gray-300">Projects</button>
-            <button onClick={() => scrollTo('contact')} className="cursor-pointer hover:text-gray-300">Contact</button>
+          <div className="hidden md:flex items-center space-x-6">
+            <button onClick={() => scrollTo('home')} className="cursor-pointer hover:text-gray-300">{t('home')}</button>
+            <button onClick={() => scrollTo('about')} className="cursor-pointer hover:text-gray-300">{t('about')}</button>
+            <button onClick={() => scrollTo('services')} className="cursor-pointer hover:text-gray-300">{t('services')}</button>
+            <button onClick={() => scrollTo('projects')} className="cursor-pointer hover:text-gray-300">{t('projects')}</button>
+            <button onClick={() => scrollTo('contact')} className="cursor-pointer hover:text-gray-300">{t('contact')}</button>
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
+          <div className="md:hidden flex items-center gap-3">
+            <LanguageSwitcher />
+            <button onClick={() => setIsOpen(!isOpen)} aria-label={t('toggleMenu')}>
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
@@ -48,11 +52,11 @@ export default function Navbar() {
         {/* Mobile menu */}
         {isOpen && (
           <div className="md:hidden mt-2 space-y-2 flex flex-col items-center">
-            <button onClick={() => scrollTo('home')} className="cursor-pointer hover:text-gray-300">Home</button>
-            <button onClick={() => scrollTo('about')} className="cursor-pointer hover:text-gray-300">About</button>
-            <button onClick={() => scrollTo('services')} className="cursor-pointer hover:text-gray-300">Services</button>
-            <button onClick={() => scrollTo('projects')} className="cursor-pointer hover:text-gray-300">Projects</button>
-            <button onClick={() => scrollTo('contact')} className="cursor-pointer hover:text-gray-300">Contact</button>
+            <button onClick={() => scrollTo('home')} className="cursor-pointer hover:text-gray-300">{t('home')}</button>
+            <button onClick={() => scrollTo('about')} className="cursor-pointer hover:text-gray-300">{t('about')}</button>
+            <button onClick={() => scrollTo('services')} className="cursor-pointer hover:text-gray-300">{t('services')}</button>
+            <button onClick={() => scrollTo('projects')} className="cursor-pointer hover:text-gray-300">{t('projects')}</button>
+            <button onClick={() => scrollTo('contact')} className="cursor-pointer hover:text-gray-300">{t('contact')}</button>
           </div>
         )}
       </div>

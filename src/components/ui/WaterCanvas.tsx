@@ -3,8 +3,10 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
-export default function WaterCanvas() {
+export default function WaterCanvas({ text = 'Lateral Thinking' }: { text?: string }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const textRef = useRef(text);
+  textRef.current = text;
 
   useEffect(() => {
     if (!canvasRef.current) return;
@@ -51,7 +53,7 @@ export default function WaterCanvas() {
 
         pVel += delta * (-2.0 * pressure + p_right + p_left) / 4.0;
         pVel += delta * (-2.0 * pressure + p_up + p_down) / 4.0;
-        
+
         pressure += delta * pVel;
 
         pVel -= 0.005 * delta * pressure;
@@ -88,7 +90,7 @@ export default function WaterCanvas() {
 
       void main() {
         vec4 data = texture2D(textureA, vUv);
-        
+
         vec2 distortion = 0.3 * data.zw;
         vec4 color = texture2D(textureB, vUv + distortion);
 
@@ -173,7 +175,7 @@ export default function WaterCanvas() {
       ctx.font = `bold ${fontSize}px Arial`;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.fillText('Lateral Thinking', w / 2, h / 2);
+      ctx.fillText(textRef.current, w / 2, h / 2);
     };
 
     drawText(width, height);

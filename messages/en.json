@@ -1,0 +1,148 @@
+{
+  "Metadata": {
+    "title": "Lateral Thinking",
+    "description": "Software agency"
+  },
+  "Navbar": {
+    "brand": "Lateral Thinking",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+    "toggleMenu": "Toggle Menu"
+  },
+  "Hero": {
+    "canvasText": "Lateral Thinking",
+    "subtitle": "We create custom software that your team and clients will love.",
+    "serviceList": "Websites | Apps | UI/UX design | Automation",
+    "contactButton": "Contact us",
+    "workButton": "See our work"
+  },
+  "ExitIntent": {
+    "mainMessage": "Wake up. This is your last chance. After this, there is no turning back. You take the blue pill... you leave this site and miss out on top-notch software skills. You take the red pill... we dive into code, and we'll show you how deep our expertise goes.",
+    "bluePill": "[ BLUE PILL ]",
+    "redPill": "[ RED PILL ]",
+    "closePopup": "Close popup",
+    "bluePillAria": "Take the blue pill",
+    "redPillAria": "Take the red pill"
+  },
+  "About": {
+    "label": "Lateral Thinking",
+    "headline1": "We Build",
+    "headline2": "Software",
+    "body1": "Lateral Thinking is a software agency for companies that refuse to settle. We combine sharp engineering with unconventional strategy to create digital products that outperform, outlast, and outclass.",
+    "body2": "We don't just build — we think laterally. Every project begins with understanding the bigger picture, so your technology drives real business outcomes.",
+    "stat1Value": "50+",
+    "stat1Label": "Projects Delivered",
+    "stat2Value": "98%",
+    "stat2Label": "Client Satisfaction",
+    "stat3Value": "12+",
+    "stat3Label": "Industries Served",
+    "stat4Value": "24/7",
+    "stat4Label": "Ongoing Support",
+    "cta": "About Us"
+  },
+  "Services": {
+    "label": "What We Build",
+    "headline": "Services",
+    "s01Title": "Websites",
+    "s01Desc": "High-performance sites built for speed, conversion, and lasting impression.",
+    "s02Title": "Mobile Apps",
+    "s02Desc": "Native and cross-platform apps that feel intuitive from the first tap.",
+    "s03Title": "UI/UX Design",
+    "s03Desc": "Research-driven design that balances beauty with usability.",
+    "s04Title": "AI Integration",
+    "s04Desc": "Smart assistants, predictive models, and intelligent automation.",
+    "s05Title": "Automation",
+    "s05Desc": "Pipelines and workflows that run your operations on autopilot.",
+    "s06Title": "Backend & APIs",
+    "s06Desc": "Scalable architectures and the infrastructure that keeps everything running.",
+    "s07Title": "Ecommerce Stores",
+    "s07Desc": "End-to-end stores with payment gateways and checkout flows that convert.",
+    "s08Title": "ERP Systems",
+    "s08Desc": "Unified platforms connecting finance, operations, HR, and supply chain.",
+    "s09Title": "CRM Systems",
+    "s09Desc": "Relationship management tools that help close faster and retain longer."
+  },
+  "ProjectsSection": {
+    "label": "Our Work",
+    "headline": "Projects",
+    "viewAll": "View All Projects"
+  },
+  "ProjectsPage": {
+    "label": "All Projects",
+    "headline": "Our Work"
+  },
+  "ProjectDetail": {
+    "notFound": "Project Not Found",
+    "backToProjects": "Back to Projects",
+    "allProjects": "All Projects",
+    "overviewLabel": "Overview",
+    "overviewHeadline": "The Brief",
+    "challengeLabel": "Challenge",
+    "challengeHeadline": "The Problem",
+    "galleryLabel": "Gallery",
+    "image": "Image",
+    "solutionLabel": "Solution",
+    "solutionHeadline": "Our Approach",
+    "resultsLabel": "Results",
+    "resultsHeadline": "The Impact",
+    "nextProjectLabel": "Next Project"
+  },
+  "Contact": {
+    "label": "Get In Touch",
+    "headline1": "Let's Work",
+    "headline2": "Together",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "submit": "Send Message",
+    "successTitle": "Message Sent",
+    "successBody": "Thank you for reaching out. We'll get back to you shortly.",
+    "directContact": "Direct Contact",
+    "whatsapp": "WhatsApp",
+    "whatsappSub": "Chat with us directly",
+    "email": "Email",
+    "emailAddress": "hello@lateralthinking.com",
+    "followUs": "Follow Us"
+  },
+  "projects": {
+    "apex-commerce": {
+      "title": "Apex Commerce",
+      "category": "Ecommerce Platform",
+      "description": "A high-performance headless ecommerce platform built for a luxury fashion brand, handling 50k+ daily visitors with sub-second page loads.",
+      "overview": "Apex Commerce is a fully custom headless ecommerce solution designed for a luxury fashion retailer looking to scale their online presence internationally. The platform supports multi-currency, multi-language, and region-specific catalogs with a seamless checkout experience.",
+      "challenge": "The existing monolithic platform was struggling under traffic spikes during seasonal launches, with page load times exceeding 8 seconds and a cart abandonment rate of 78%. The client needed a modern solution that could handle global traffic while maintaining the premium brand experience their customers expected.",
+      "solution": "We architected a headless commerce stack with Next.js on the frontend and a custom API layer backed by a composable commerce engine. Static generation for product pages combined with ISR for inventory-sensitive data gave us the best of both worlds — blazing speed with real-time accuracy. A custom CDN strategy ensured sub-200ms TTFB globally.",
+      "result0": "3x improvement in page load speed",
+      "result1": "Cart abandonment reduced from 78% to 34%",
+      "result2": "140% increase in mobile conversions",
+      "result3": "Successful launch across 12 international markets"
+    },
+    "neural-dashboard": {
+      "title": "Neural Dashboard",
+      "category": "AI Platform",
+      "description": "An AI-powered analytics dashboard that transforms raw business data into actionable insights with natural language queries and predictive modeling.",
+      "overview": "Neural Dashboard is an enterprise analytics platform that makes complex data accessible to non-technical teams. Users can query their business data using plain English, generate automated reports, and receive AI-driven recommendations for operational improvements.",
+      "challenge": "The client, a mid-size logistics company, was drowning in data but starving for insights. Their analysts spent 80% of their time writing SQL queries and building manual reports, leaving little room for actual strategic analysis. They needed a tool that could democratize data access across the organization.",
+      "solution": "We built a custom NLP layer that translates natural language queries into optimized database operations, backed by a fine-tuned LLM for context-aware interpretation. A real-time streaming pipeline ensures dashboards stay current, while a predictive engine surfaces anomalies and trends before they become problems.",
+      "result0": "Report generation time reduced from 4 hours to 30 seconds",
+      "result1": "95% query accuracy on natural language inputs",
+      "result2": "Adopted by 200+ non-technical employees in first quarter",
+      "result3": "40% reduction in operational blind spots"
+    },
+    "flow-crm": {
+      "title": "Flow CRM",
+      "category": "CRM System",
+      "description": "A custom CRM system with intelligent automation that reduced the sales team pipeline management time by 60% and increased close rates.",
+      "overview": "Flow CRM is a purpose-built customer relationship management system designed for a SaaS company with a complex B2B sales cycle. Unlike off-the-shelf solutions, every feature was tailored to their specific workflow, from lead scoring to contract management.",
+      "challenge": "The sales team was using a combination of spreadsheets, a legacy CRM, and email threads to manage a pipeline of 2,000+ active deals. Critical follow-ups were being missed, lead scoring was manual and inconsistent, and management had zero visibility into pipeline health without hours of manual consolidation.",
+      "solution": "We designed a CRM from the ground up around their sales methodology, with automated lead scoring based on engagement signals, intelligent follow-up scheduling, and a real-time pipeline dashboard. Deep integrations with their email, calendar, and billing systems eliminated double-entry and created a single source of truth.",
+      "result0": "60% reduction in pipeline management overhead",
+      "result1": "Close rate improved from 12% to 21%",
+      "result2": "Zero missed follow-ups in first 6 months",
+      "result3": "Full pipeline visibility for leadership in real-time"
+    }
+  }
+}

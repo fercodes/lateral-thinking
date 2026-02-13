@@ -3,8 +3,11 @@
 import PrimaryButton from '@/components/ui/PrimaryButton';
 import SecondaryButton from '@/components/ui/SecondaryButton';
 import WaterCanvas from '@/components/ui/WaterCanvas';
+import { useTranslations } from 'next-intl';
 
 export default function Hero() {
+  const t = useTranslations('Hero');
+
   return (
     <>
       <style jsx global>{`
@@ -231,7 +234,7 @@ export default function Hero() {
       `}</style>
 
       <section className="relative w-full h-screen overflow-hidden bg-[#2783fb]">
-        <WaterCanvas />
+        <WaterCanvas text={t('canvasText')} />
 
         <div className="fish">
           <div className="koiCoil"></div>
@@ -271,19 +274,19 @@ export default function Hero() {
 
         <div className="absolute bottom-20 left-0 w-full flex flex-col items-center gap-6 z-10">
           <div className="text-white text-center text-sm md:text-xl font-sans space-y-2 pointer-events-none">
-            <p>We create custom software that your team and clients will love.</p>
-            <p>Websites | Apps | UI/UX design | Automation</p>
+            <p>{t('subtitle')}</p>
+            <p>{t('serviceList')}</p>
           </div>
           <div className="flex flex-row gap-8 md:gap-16 lg:gap-24">
             <PrimaryButton
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Contact us
+              {t('contactButton')}
             </PrimaryButton>
             <SecondaryButton
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Mira nuestro trabajo
+              {t('workButton')}
             </SecondaryButton>
           </div>
         </div>

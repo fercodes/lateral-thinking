@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState, useRef } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function ExitIntent() {
   const [showPopup, setShowPopup] = useState(false);
@@ -10,9 +11,9 @@ export default function ExitIntent() {
   const [secondTypingComplete, setSecondTypingComplete] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animationRef = useRef<number | null>(null);
+  const t = useTranslations('ExitIntent');
 
-  const mainMessage =
-    "Wake up. This is your last chance. After this, there is no turning back. You take the blue pill... you leave this site and miss out on top-notch software skills. You take the red pill... we dive into code, and we'll show you how deep our expertise goes.";
+  const mainMessage = t('mainMessage');
 
   // Typewriter effect for main message
   useEffect(() => {
@@ -32,7 +33,7 @@ export default function ExitIntent() {
     }, typingSpeed);
 
     return () => clearInterval(typeInterval);
-  }, [showPopup]);
+  }, [showPopup, mainMessage]);
 
   // Blinking cursor effect
   useEffect(() => {
@@ -169,7 +170,7 @@ export default function ExitIntent() {
           <button
             onClick={handleBluePill}
             className="absolute top-4 right-4 text-[#00FF41] hover:text-[#00FF41]/80 transition-colors z-10"
-            aria-label="Close popup"
+            aria-label={t('closePopup')}
           >
             <svg
               className="w-6 h-6"
@@ -204,11 +205,11 @@ export default function ExitIntent() {
               <button
                 onClick={handleBluePill}
                 className="group relative"
-                aria-label="Take the blue pill"
+                aria-label={t('bluePillAria')}
               >
                 <div className="w-48 h-16 bg-black border-2 border-[#00FF41] rounded-full shadow-lg shadow-[#00FF41]/30 flex items-center justify-center transform transition-all duration-300 hover:bg-[#00FF41]/10 hover:scale-105 hover:shadow-[#00FF41]/50">
                   <span className="text-[#00FF41] font-bold text-sm tracking-widest font-mono">
-                    [ BLUE PILL ]
+                    {t('bluePill')}
                   </span>
                 </div>
               </button>
@@ -216,11 +217,11 @@ export default function ExitIntent() {
               <button
                 onClick={handleRedPill}
                 className="group relative"
-                aria-label="Take the red pill"
+                aria-label={t('redPillAria')}
               >
                 <div className="w-48 h-16 bg-[#00FF41] border-2 border-[#00FF41] rounded-full shadow-lg shadow-[#00FF41]/50 flex items-center justify-center transform transition-all duration-300 hover:bg-[#00FF41]/90 hover:scale-105 hover:shadow-[#00FF41]/70">
                   <span className="text-black font-bold text-sm tracking-widest font-mono">
-                    [ RED PILL ]
+                    {t('redPill')}
                   </span>
                 </div>
               </button>

@@ -1,0 +1,148 @@
+{
+  "Metadata": {
+    "title": "Lateral Thinking",
+    "description": "Agencia de software"
+  },
+  "Navbar": {
+    "brand": "Lateral Thinking",
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "toggleMenu": "Alternar menú"
+  },
+  "Hero": {
+    "canvasText": "Lateral Thinking",
+    "subtitle": "Creamos software a medida que tu equipo y tus clientes van a amar.",
+    "serviceList": "Sitios web | Apps | Diseño UI/UX | Automatización",
+    "contactButton": "Contáctanos",
+    "workButton": "Ver nuestro trabajo"
+  },
+  "ExitIntent": {
+    "mainMessage": "Despierta. Esta es tu última oportunidad. Después de esto, no hay vuelta atrás. Tomas la pastilla azul... te vas de este sitio y te pierdes habilidades de software de primer nivel. Tomas la pastilla roja... nos sumergimos en el código, y te mostraremos lo profunda que es nuestra experiencia.",
+    "bluePill": "[ PASTILLA AZUL ]",
+    "redPill": "[ PASTILLA ROJA ]",
+    "closePopup": "Cerrar ventana",
+    "bluePillAria": "Tomar la pastilla azul",
+    "redPillAria": "Tomar la pastilla roja"
+  },
+  "About": {
+    "label": "Lateral Thinking",
+    "headline1": "Construimos",
+    "headline2": "Software",
+    "body1": "Lateral Thinking es una agencia de software para empresas que se niegan a conformarse. Combinamos ingeniería afilada con estrategia no convencional para crear productos digitales que superan, perduran y se destacan.",
+    "body2": "No solo construimos — pensamos lateralmente. Cada proyecto comienza entendiendo el panorama completo, para que tu tecnología impulse resultados de negocio reales.",
+    "stat1Value": "50+",
+    "stat1Label": "Proyectos Entregados",
+    "stat2Value": "98%",
+    "stat2Label": "Satisfacción del Cliente",
+    "stat3Value": "12+",
+    "stat3Label": "Industrias Atendidas",
+    "stat4Value": "24/7",
+    "stat4Label": "Soporte Continuo",
+    "cta": "Sobre Nosotros"
+  },
+  "Services": {
+    "label": "Lo Que Construimos",
+    "headline": "Servicios",
+    "s01Title": "Sitios Web",
+    "s01Desc": "Sitios de alto rendimiento diseñados para velocidad, conversión e impacto duradero.",
+    "s02Title": "Apps Móviles",
+    "s02Desc": "Apps nativas y multiplataforma que se sienten intuitivas desde el primer toque.",
+    "s03Title": "Diseño UI/UX",
+    "s03Desc": "Diseño basado en investigación que equilibra estética con usabilidad.",
+    "s04Title": "Integración de IA",
+    "s04Desc": "Asistentes inteligentes, modelos predictivos y automatización inteligente.",
+    "s05Title": "Automatización",
+    "s05Desc": "Pipelines y flujos de trabajo que operan tus procesos en piloto automático.",
+    "s06Title": "Backend y APIs",
+    "s06Desc": "Arquitecturas escalables y la infraestructura que mantiene todo funcionando.",
+    "s07Title": "Tiendas Ecommerce",
+    "s07Desc": "Tiendas completas con pasarelas de pago y flujos de compra que convierten.",
+    "s08Title": "Sistemas ERP",
+    "s08Desc": "Plataformas unificadas que conectan finanzas, operaciones, RRHH y cadena de suministro.",
+    "s09Title": "Sistemas CRM",
+    "s09Desc": "Herramientas de gestión de relaciones que ayudan a cerrar más rápido y retener más tiempo."
+  },
+  "ProjectsSection": {
+    "label": "Nuestro Trabajo",
+    "headline": "Proyectos",
+    "viewAll": "Ver Todos los Proyectos"
+  },
+  "ProjectsPage": {
+    "label": "Todos los Proyectos",
+    "headline": "Nuestro Trabajo"
+  },
+  "ProjectDetail": {
+    "notFound": "Proyecto No Encontrado",
+    "backToProjects": "Volver a Proyectos",
+    "allProjects": "Todos los Proyectos",
+    "overviewLabel": "Resumen",
+    "overviewHeadline": "El Briefing",
+    "challengeLabel": "Desafío",
+    "challengeHeadline": "El Problema",
+    "galleryLabel": "Galería",
+    "image": "Imagen",
+    "solutionLabel": "Solución",
+    "solutionHeadline": "Nuestro Enfoque",
+    "resultsLabel": "Resultados",
+    "resultsHeadline": "El Impacto",
+    "nextProjectLabel": "Siguiente Proyecto"
+  },
+  "Contact": {
+    "label": "Contáctanos",
+    "headline1": "Trabajemos",
+    "headline2": "Juntos",
+    "nameLabel": "Nombre",
+    "emailLabel": "Correo electrónico",
+    "messageLabel": "Mensaje",
+    "submit": "Enviar Mensaje",
+    "successTitle": "Mensaje Enviado",
+    "successBody": "Gracias por comunicarte. Te responderemos a la brevedad.",
+    "directContact": "Contacto Directo",
+    "whatsapp": "WhatsApp",
+    "whatsappSub": "Chatea con nosotros directamente",
+    "email": "Correo electrónico",
+    "emailAddress": "hello@lateralthinking.com",
+    "followUs": "Síguenos"
+  },
+  "projects": {
+    "apex-commerce": {
+      "title": "Apex Commerce",
+      "category": "Plataforma Ecommerce",
+      "description": "Una plataforma de ecommerce headless de alto rendimiento creada para una marca de moda de lujo, que maneja más de 50.000 visitantes diarios con tiempos de carga inferiores al segundo.",
+      "overview": "Apex Commerce es una solución de ecommerce headless completamente personalizada, diseñada para un retailer de moda de lujo que buscaba escalar su presencia online a nivel internacional. La plataforma soporta múltiples monedas, múltiples idiomas y catálogos específicos por región con una experiencia de compra fluida.",
+      "challenge": "La plataforma monolítica existente tenía dificultades con los picos de tráfico durante los lanzamientos de temporada, con tiempos de carga superiores a 8 segundos y una tasa de abandono de carrito del 78%. El cliente necesitaba una solución moderna capaz de manejar tráfico global mientras mantenía la experiencia premium que sus clientes esperaban.",
+      "solution": "Diseñamos una arquitectura de comercio headless con Next.js en el frontend y una capa de API personalizada respaldada por un motor de comercio componible. La generación estática para páginas de producto combinada con ISR para datos sensibles al inventario nos dio lo mejor de ambos mundos: velocidad extrema con precisión en tiempo real. Una estrategia de CDN personalizada aseguró un TTFB inferior a 200ms a nivel global.",
+      "result0": "Mejora de 3x en velocidad de carga",
+      "result1": "Abandono de carrito reducido del 78% al 34%",
+      "result2": "Aumento del 140% en conversiones móviles",
+      "result3": "Lanzamiento exitoso en 12 mercados internacionales"
+    },
+    "neural-dashboard": {
+      "title": "Neural Dashboard",
+      "category": "Plataforma de IA",
+      "description": "Un panel de análisis impulsado por IA que transforma datos de negocio en bruto en información accionable mediante consultas en lenguaje natural y modelado predictivo.",
+      "overview": "Neural Dashboard es una plataforma de análisis empresarial que hace accesibles los datos complejos a equipos no técnicos. Los usuarios pueden consultar sus datos de negocio usando lenguaje natural, generar reportes automatizados y recibir recomendaciones impulsadas por IA para mejoras operativas.",
+      "challenge": "El cliente, una empresa de logística mediana, estaba ahogada en datos pero hambrienta de información útil. Sus analistas dedicaban el 80% de su tiempo escribiendo consultas SQL y armando reportes manuales, dejando poco espacio para el análisis estratégico real. Necesitaban una herramienta que pudiera democratizar el acceso a los datos en toda la organización.",
+      "solution": "Construimos una capa de NLP personalizada que traduce consultas en lenguaje natural a operaciones de base de datos optimizadas, respaldada por un LLM ajustado para interpretación contextual. Un pipeline de streaming en tiempo real mantiene los dashboards actualizados, mientras un motor predictivo detecta anomalías y tendencias antes de que se conviertan en problemas.",
+      "result0": "Tiempo de generación de reportes reducido de 4 horas a 30 segundos",
+      "result1": "95% de precisión en consultas de lenguaje natural",
+      "result2": "Adoptado por más de 200 empleados no técnicos en el primer trimestre",
+      "result3": "Reducción del 40% en puntos ciegos operativos"
+    },
+    "flow-crm": {
+      "title": "Flow CRM",
+      "category": "Sistema CRM",
+      "description": "Un sistema CRM personalizado con automatización inteligente que redujo el tiempo de gestión del pipeline de ventas en un 60% y aumentó las tasas de cierre.",
+      "overview": "Flow CRM es un sistema de gestión de relaciones con clientes diseñado a medida para una empresa SaaS con un ciclo de ventas B2B complejo. A diferencia de las soluciones genéricas, cada funcionalidad fue adaptada a su flujo de trabajo específico, desde la calificación de leads hasta la gestión de contratos.",
+      "challenge": "El equipo de ventas usaba una combinación de hojas de cálculo, un CRM heredado y cadenas de correo electrónico para gestionar un pipeline de más de 2.000 negocios activos. Se estaban perdiendo seguimientos críticos, la calificación de leads era manual e inconsistente, y la dirección no tenía visibilidad del estado del pipeline sin horas de consolidación manual.",
+      "solution": "Diseñamos un CRM desde cero basado en su metodología de ventas, con calificación automática de leads según señales de interacción, programación inteligente de seguimientos y un panel de pipeline en tiempo real. Integraciones profundas con su correo, calendario y sistema de facturación eliminaron la doble entrada y crearon una única fuente de verdad.",
+      "result0": "Reducción del 60% en la carga de gestión del pipeline",
+      "result1": "Tasa de cierre mejorada del 12% al 21%",
+      "result2": "Cero seguimientos perdidos en los primeros 6 meses",
+      "result3": "Visibilidad total del pipeline para liderazgo en tiempo real"
+    }
+  }
+}

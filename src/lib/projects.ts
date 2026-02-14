@@ -9,8 +9,16 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: 'apex-commerce',
+    slug: 'lumiere-travel',
     number: '01',
+    year: '2024',
+    tags: ['Next.js', 'TypeScript', 'Travel API', 'Tailwind'],
+    galleryCount: 4,
+    resultCount: 4,
+  },
+  {
+    slug: 'apex-commerce',
+    number: '02',
     year: '2024',
     tags: ['Next.js', 'TypeScript', 'Headless CMS', 'Stripe', 'Vercel'],
     galleryCount: 4,
@@ -18,7 +26,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'neural-dashboard',
-    number: '02',
+    number: '03',
     year: '2024',
     tags: ['React', 'Python', 'OpenAI', 'PostgreSQL', 'WebSockets'],
     galleryCount: 4,
@@ -26,7 +34,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'flow-crm',
-    number: '03',
+    number: '04',
     year: '2025',
     tags: ['Next.js', 'Node.js', 'PostgreSQL', 'Redis', 'Resend'],
     galleryCount: 4,

@@ -6,6 +6,7 @@ import { Archivo_Black, DM_Sans } from 'next/font/google';
 import { Link } from '@/i18n/navigation';
 import { getProjectBySlug, getNextProject } from '@/lib/projects';
 import { useTranslations } from 'next-intl';
+import { projectImages } from '@/data/projectImages';
 
 const archivo = Archivo_Black({
   weight: '400',
@@ -19,7 +20,13 @@ const dmSans = DM_Sans({
   display: 'swap',
 });
 
-function Starburst({ size = 60, color = '#EDE0C4' }: { size?: number; color?: string }) {
+function Starburst({
+  size = 60,
+  color = '#EDE0C4',
+}: {
+  size?: number;
+  color?: string;
+}) {
   const points = 8;
   const outerR = size / 2;
   const innerR = outerR * 0.35;
@@ -117,7 +124,7 @@ export default function ProjectPage() {
 
   const nextProject = getNextProject(slug);
   const results = Array.from({ length: project.resultCount }, (_, i) =>
-    tp(`${project.slug}.result${i}`)
+    tp(`${project.slug}.result${i}`),
   );
 
   return (
@@ -218,7 +225,10 @@ export default function ProjectPage() {
       </div>
 
       {/* Thin separator */}
-      <div className="mx-5 md:mx-10 lg:mx-16 h-px" style={{ background: 'rgba(237, 224, 196, 0.1)' }} />
+      <div
+        className="mx-5 md:mx-10 lg:mx-16 h-px"
+        style={{ background: 'rgba(237, 224, 196, 0.1)' }}
+      />
 
       {/* Overview */}
       <div className="px-5 md:px-10 lg:px-16 py-12 md:py-20">
@@ -241,7 +251,10 @@ export default function ProjectPage() {
             <FadeIn delay={0.25}>
               <p
                 className={`${dmSans.className} font-light leading-[1.8]`}
-                style={{ fontSize: '0.9rem', color: 'rgba(237, 224, 196, 0.7)' }}
+                style={{
+                  fontSize: '0.9rem',
+                  color: 'rgba(237, 224, 196, 0.7)',
+                }}
               >
                 {tp(`${project.slug}.overview`)}
               </p>
@@ -251,7 +264,10 @@ export default function ProjectPage() {
       </div>
 
       {/* Challenge */}
-      <div className="mx-5 md:mx-10 lg:mx-16 h-px" style={{ background: 'rgba(237, 224, 196, 0.1)' }} />
+      <div
+        className="mx-5 md:mx-10 lg:mx-16 h-px"
+        style={{ background: 'rgba(237, 224, 196, 0.1)' }}
+      />
       <div className="px-5 md:px-10 lg:px-16 py-12 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           <div className="lg:col-span-4">
@@ -272,7 +288,10 @@ export default function ProjectPage() {
             <FadeIn delay={0.15}>
               <p
                 className={`${dmSans.className} font-light leading-[1.8]`}
-                style={{ fontSize: '0.9rem', color: 'rgba(237, 224, 196, 0.7)' }}
+                style={{
+                  fontSize: '0.9rem',
+                  color: 'rgba(237, 224, 196, 0.7)',
+                }}
               >
                 {tp(`${project.slug}.challenge`)}
               </p>
@@ -281,28 +300,25 @@ export default function ProjectPage() {
         </div>
       </div>
 
-      {/* Gallery placeholder */}
+      {/* Gallery */}
       <div className="px-5 md:px-10 lg:px-16 py-8 md:py-12">
         <FadeIn delay={0.1}>
           <SectionLabel>{td('galleryLabel')}</SectionLabel>
         </FadeIn>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {Array.from({ length: project.galleryCount }).map((_, i) => (
+          {(
+            projectImages[project.slug as keyof typeof projectImages] || []
+          ).map((src: string, i: number) => (
             <FadeIn key={i} delay={0.15 + i * 0.05}>
               <div
-                className="aspect-[16/10] flex items-center justify-center"
+                className="aspect-[16/10] overflow-hidden"
                 style={{ border: '1px solid rgba(237, 224, 196, 0.1)' }}
               >
-                <span
-                  className={`${dmSans.className} uppercase font-light`}
-                  style={{
-                    fontSize: '0.55rem',
-                    letterSpacing: '0.2em',
-                    color: 'rgba(237, 224, 196, 0.2)',
-                  }}
-                >
-                  {td('image')} {String(i + 1).padStart(2, '0')}
-                </span>
+                <img
+                  src={src}
+                  alt={`${tp(`${project.slug}.title`)} - ${td('image')} ${i + 1}`}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </FadeIn>
           ))}
@@ -310,7 +326,10 @@ export default function ProjectPage() {
       </div>
 
       {/* Solution */}
-      <div className="mx-5 md:mx-10 lg:mx-16 h-px" style={{ background: 'rgba(237, 224, 196, 0.1)' }} />
+      <div
+        className="mx-5 md:mx-10 lg:mx-16 h-px"
+        style={{ background: 'rgba(237, 224, 196, 0.1)' }}
+      />
       <div className="px-5 md:px-10 lg:px-16 py-12 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           <div className="lg:col-span-4">
@@ -331,7 +350,10 @@ export default function ProjectPage() {
             <FadeIn delay={0.15}>
               <p
                 className={`${dmSans.className} font-light leading-[1.8]`}
-                style={{ fontSize: '0.9rem', color: 'rgba(237, 224, 196, 0.7)' }}
+                style={{
+                  fontSize: '0.9rem',
+                  color: 'rgba(237, 224, 196, 0.7)',
+                }}
               >
                 {tp(`${project.slug}.solution`)}
               </p>
@@ -341,7 +363,10 @@ export default function ProjectPage() {
       </div>
 
       {/* Results */}
-      <div className="mx-5 md:mx-10 lg:mx-16 h-px" style={{ background: 'rgba(237, 224, 196, 0.1)' }} />
+      <div
+        className="mx-5 md:mx-10 lg:mx-16 h-px"
+        style={{ background: 'rgba(237, 224, 196, 0.1)' }}
+      />
       <div className="px-5 md:px-10 lg:px-16 py-12 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           <div className="lg:col-span-4">
@@ -400,7 +425,10 @@ export default function ProjectPage() {
       </div>
 
       {/* Next project */}
-      <div className="mx-5 md:mx-10 lg:mx-16 h-px" style={{ background: 'rgba(237, 224, 196, 0.1)' }} />
+      <div
+        className="mx-5 md:mx-10 lg:mx-16 h-px"
+        style={{ background: 'rgba(237, 224, 196, 0.1)' }}
+      />
       <div className="px-5 md:px-10 lg:px-16 py-12 md:py-20">
         <FadeIn delay={0.1}>
           <SectionLabel>{td('nextProjectLabel')}</SectionLabel>

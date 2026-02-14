@@ -108,6 +108,18 @@
     "followUs": "Síguenos"
   },
   "projects": {
+    "lumiere-travel": {
+      "title": "Lumière travel",
+      "category": "Plataforma para agencia de viajes",
+      "description": "Una plataforma personalizada de reservas para una agencia boutique, con itinerarios dinámicos, disponibilidad en tiempo real y recomendaciones personalizadas.",
+      "overview": "Lumière Travel es una plataforma de reservas a medida diseñada para una agencia de viajes boutique especializada en experiencias de lujo personalizadas. La plataforma permite a los usuarios crear itinerarios dinámicos y consultar disponibilidad en tiempo real con múltiples proveedores.",
+      "challenge": "El cliente utilizaba una mezcla de herramientas de terceros que no lograban satisfacer sus necesidades específicas. Necesitaban una plataforma unificada capaz de manejar lógica compleja de reservas, integrarse con diversas APIs y ofrecer una experiencia de usuario impecable acorde a su posicionamiento premium.",
+      "solution": "Desarrollamos una plataforma personalizada con arquitectura modular que facilitó la integración de nuevos proveedores y servicios. Un constructor de itinerarios dinámico brindó a los usuarios la flexibilidad de personalizar sus viajes, mientras que un motor de recomendaciones ofrecía sugerencias basadas en preferencias y reservas anteriores. La plataforma también incluyó un panel de administración para que la agencia gestionara reservas, proveedores e interacciones con clientes de forma eficiente.",
+      "result0": "50% de aumento en eficiencia de reservas para la agencia",
+      "result1": "30% de mejora en índices de satisfacción del cliente",
+      "result2": "25% de incremento en reservas recurrentes durante el primer año",
+      "result3": "Integración exitosa con más de 20 proveedores y APIs de viajes"
+    },
     "apex-commerce": {
       "title": "Apex Commerce",
       "category": "Plataforma Ecommerce",

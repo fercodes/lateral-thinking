@@ -4,6 +4,13 @@ import PrimaryButton from '@/components/ui/PrimaryButton';
 import SecondaryButton from '@/components/ui/SecondaryButton';
 import WaterCanvas from '@/components/ui/WaterCanvas';
 import { useTranslations } from 'next-intl';
+import { DM_Sans } from 'next/font/google';
+
+const dmSans = DM_Sans({
+  weight: ['300', '400'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export default function Hero() {
   const t = useTranslations('Hero');
@@ -233,7 +240,7 @@ export default function Hero() {
         }
       `}</style>
 
-      <section className="relative w-full h-screen overflow-hidden bg-[#2783fb]">
+      <section className="relative w-full h-screen overflow-hidden" style={{ background: '#1B3FAB' }}>
         <WaterCanvas text={t('canvasText')} />
 
         <div className="fish">
@@ -272,12 +279,31 @@ export default function Hero() {
         </div>
         <div className="seaLevel"></div>
 
-        <div className="absolute bottom-20 left-0 w-full flex flex-col items-center gap-6 z-10">
-          <div className="text-white text-center text-sm md:text-xl font-sans space-y-2 pointer-events-none">
-            <p>{t('subtitle')}</p>
-            <p>{t('serviceList')}</p>
+        <div className="absolute bottom-20 left-0 w-full flex flex-col items-center gap-8 z-10">
+          <div className={`${dmSans.className} text-center space-y-2 pointer-events-none`}>
+            <p
+              className="font-light"
+              style={{
+                fontSize: 'clamp(0.85rem, 1.5vw, 1.15rem)',
+                lineHeight: 1.6,
+                color: '#EDE0C4',
+                letterSpacing: '0.02em',
+              }}
+            >
+              {t('subtitle')}
+            </p>
+            <p
+              className="uppercase font-light"
+              style={{
+                fontSize: 'clamp(0.6rem, 1vw, 0.75rem)',
+                letterSpacing: '0.3em',
+                color: 'rgba(237, 224, 196, 0.6)',
+              }}
+            >
+              {t('serviceList')}
+            </p>
           </div>
-          <div className="flex flex-row gap-8 md:gap-16 lg:gap-24">
+          <div className="flex flex-row gap-6 md:gap-10">
             <PrimaryButton
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >

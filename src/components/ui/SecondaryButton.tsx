@@ -1,3 +1,11 @@
+import { DM_Sans } from 'next/font/google';
+
+const dmSans = DM_Sans({
+  weight: ['400', '500'],
+  subsets: ['latin'],
+  display: 'swap',
+});
+
 type SecondaryButtonProps = {
   children: React.ReactNode;
   onClick?: () => void;
@@ -15,18 +23,23 @@ export default function SecondaryButton({
     <button
       type={type}
       onClick={onClick}
-      className={`mt-6 px-5 py-3
-        md:mt-6 md:px-6 md:py-3
-        border border-white/50 
-        bg-white/5 
-        text-white/80 
-        rounded-3xl 
-        backdrop-blur-sm 
-        hover:bg-white/10 
-        hover:text-white 
-        transition 
-        cursor-pointer
-        ${className}`}
+      className={`${dmSans.className} uppercase font-medium tracking-[0.15em] cursor-pointer transition-colors duration-300 ${className}`}
+      style={{
+        fontSize: '0.7rem',
+        padding: '14px 32px',
+        background: 'transparent',
+        color: '#EDE0C4',
+        border: '1.5px solid #EDE0C4',
+        borderRadius: 4,
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.background = '#EDE0C4';
+        e.currentTarget.style.color = '#1B3FAB';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.background = 'transparent';
+        e.currentTarget.style.color = '#EDE0C4';
+      }}
     >
       {children}
     </button>

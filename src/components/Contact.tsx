@@ -87,15 +87,15 @@ function Starburst({
 
 /* ── Social icon circles ────────────────────────────────── */
 
-const socials = [
-  { label: 'IG', href: '#', title: 'Instagram' },
+// const socials = [
+//   { label: 'IG', href: '#', title: 'Instagram' },
 
-  // { label: 'FB', href: '#', title: 'Facebook' },
-  // { label: 'TK', href: '#', title: 'TikTok' },
-  // { label: 'TG', href: '#', title: 'Telegram' },
-  // { label: 'LI', href: '#', title: 'LinkedIn' },
-  // { label: 'X', href: '#', title: 'X' },
-];
+//   { label: 'FB', href: '#', title: 'Facebook' },
+//   { label: 'TK', href: '#', title: 'TikTok' },
+//   { label: 'TG', href: '#', title: 'Telegram' },
+//   { label: 'LI', href: '#', title: 'LinkedIn' },
+//   { label: 'X', href: '#', title: 'X' },
+// ];
 
 /* ── Contact ────────────────────────────────────────────── */
 

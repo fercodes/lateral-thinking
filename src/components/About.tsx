@@ -220,6 +220,7 @@ export default function About() {
           </div>
 
           {/* Stats — right column, clean inline */}
+          {/*           
           <div className="lg:col-span-3 lg:col-start-10">
             <Reveal delay={0.45} direction="right">
               <div className="space-y-4">
@@ -249,7 +250,7 @@ export default function About() {
                 ))}
               </div>
             </Reveal>
-          </div>
+          </div>*/}
         </div>
 
         {/* Bottom row: starburst center, pill CTA right */}

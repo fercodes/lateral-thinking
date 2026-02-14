@@ -89,11 +89,12 @@ function Starburst({
 
 const socials = [
   { label: 'IG', href: '#', title: 'Instagram' },
-  { label: 'FB', href: '#', title: 'Facebook' },
-  { label: 'TK', href: '#', title: 'TikTok' },
-  { label: 'TG', href: '#', title: 'Telegram' },
-  { label: 'LI', href: '#', title: 'LinkedIn' },
-  { label: 'X', href: '#', title: 'X' },
+
+  // { label: 'FB', href: '#', title: 'Facebook' },
+  // { label: 'TK', href: '#', title: 'TikTok' },
+  // { label: 'TG', href: '#', title: 'Telegram' },
+  // { label: 'LI', href: '#', title: 'LinkedIn' },
+  // { label: 'X', href: '#', title: 'X' },
 ];
 
 /* ── Contact ────────────────────────────────────────────── */
@@ -391,7 +392,7 @@ export default function Contact() {
 
                 {/* WhatsApp */}
                 <a
-                  href="https://wa.me/1234567890"
+                  href="https://wa.link/judlk2"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 group mb-5"
@@ -434,6 +435,7 @@ export default function Contact() {
                 </a>
 
                 {/* Email */}
+                {/* 
                 <a
                   href="mailto:hello@lateralthinking.com"
                   className="flex items-center gap-4 group"
@@ -466,7 +468,7 @@ export default function Contact() {
                       {t('emailAddress')}
                     </span>
                   </div>
-                </a>
+                </a> */}
               </div>
             </Reveal>
 
@@ -480,6 +482,7 @@ export default function Contact() {
             />
 
             {/* Social icons */}
+            {/*             
             <Reveal delay={0.45} direction="right">
               <span
                 className={`${dmSans.className} uppercase font-light block mb-5`}
@@ -531,7 +534,7 @@ export default function Contact() {
                   </a>
                 ))}
               </div>
-            </Reveal>
+            </Reveal> */}
           </div>
         </div>
 

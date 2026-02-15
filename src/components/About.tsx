@@ -96,7 +96,7 @@ function PillCta({ label = 'Learn More' }: { label?: string }) {
       <span
         className="uppercase font-medium"
         style={{
-          fontSize: '0.65rem',
+          fontSize: '0.75rem',
           letterSpacing: '0.2em',
           color: '#2A2A2A',
         }}
@@ -143,7 +143,7 @@ export default function About() {
             <span
               className={`${dmSans.className} uppercase font-light block`}
               style={{
-                fontSize: '0.6rem',
+                fontSize: '0.7rem',
                 letterSpacing: '0.35em',
                 color: '#EDE0C4',
               }}
@@ -187,8 +187,8 @@ export default function About() {
               <p
                 className={`${dmSans.className} font-light leading-[1.8]`}
                 style={{
-                  fontSize: '0.9rem',
-                  color: 'rgba(237, 224, 196, 0.75)',
+                  fontSize: '0.95rem',
+                  color: 'rgba(237, 224, 196, 0.85)',
                 }}
               >
                 {t('body1')}
@@ -198,8 +198,8 @@ export default function About() {
               <p
                 className={`${dmSans.className} font-light leading-[1.8] mt-5`}
                 style={{
-                  fontSize: '0.9rem',
-                  color: 'rgba(237, 224, 196, 0.5)',
+                  fontSize: '0.95rem',
+                  color: 'rgba(237, 224, 196, 0.7)',
                 }}
               >
                 {t('body2')}

@@ -284,7 +284,7 @@ export default function Hero() {
             <p
               className="font-light"
               style={{
-                fontSize: 'clamp(0.85rem, 1.5vw, 1.15rem)',
+                fontSize: 'clamp(0.95rem, 1.5vw, 1.2rem)',
                 lineHeight: 1.6,
                 color: '#EDE0C4',
                 letterSpacing: '0.02em',
@@ -295,9 +295,9 @@ export default function Hero() {
             <p
               className="uppercase font-light"
               style={{
-                fontSize: 'clamp(0.6rem, 1vw, 0.75rem)',
+                fontSize: 'clamp(0.7rem, 1vw, 0.8rem)',
                 letterSpacing: '0.3em',
-                color: 'rgba(237, 224, 196, 0.6)',
+                color: 'rgba(237, 224, 196, 0.75)',
               }}
             >
               {t('serviceList')}

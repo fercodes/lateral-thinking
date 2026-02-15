@@ -60,9 +60,9 @@ export default function Navbar() {
                 onClick={() => scrollTo(key)}
                 className="cursor-pointer uppercase transition-colors duration-300"
                 style={{
-                  fontSize: '0.6rem',
+                  fontSize: '0.7rem',
                   letterSpacing: '0.2em',
-                  color: 'rgba(237, 224, 196, 0.7)',
+                  color: 'rgba(237, 224, 196, 0.8)',
                   background: 'none',
                   border: 'none',
                   fontWeight: 500,
@@ -71,7 +71,7 @@ export default function Navbar() {
                   e.currentTarget.style.color = '#EDE0C4';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.color = 'rgba(237, 224, 196, 0.7)';
+                  e.currentTarget.style.color = 'rgba(237, 224, 196, 0.8)';
                 }}
               >
                 {t(key)}
@@ -105,9 +105,9 @@ export default function Navbar() {
                 onClick={() => scrollTo(key)}
                 className="cursor-pointer uppercase transition-colors duration-300"
                 style={{
-                  fontSize: '0.65rem',
+                  fontSize: '0.75rem',
                   letterSpacing: '0.2em',
-                  color: 'rgba(237, 224, 196, 0.7)',
+                  color: 'rgba(237, 224, 196, 0.8)',
                   background: 'none',
                   border: 'none',
                   fontWeight: 500,
@@ -116,7 +116,7 @@ export default function Navbar() {
                   e.currentTarget.style.color = '#EDE0C4';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.color = 'rgba(237, 224, 196, 0.7)';
+                  e.currentTarget.style.color = 'rgba(237, 224, 196, 0.8)';
                 }}
               >
                 {t(key)}

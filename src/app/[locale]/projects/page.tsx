@@ -94,9 +94,9 @@ function ProjectCard({
           <span
             className={`${dmSans.className} uppercase font-light block mt-3 transition-colors duration-300`}
             style={{
-              fontSize: '0.55rem',
+              fontSize: '0.7rem',
               letterSpacing: '0.25em',
-              color: hovered ? 'rgba(27, 63, 171, 0.5)' : 'rgba(237, 224, 196, 0.45)',
+              color: hovered ? 'rgba(27, 63, 171, 0.7)' : 'rgba(237, 224, 196, 0.65)',
             }}
           >
             {t(`${project.slug}.category`)} &mdash; {project.year}
@@ -105,9 +105,9 @@ function ProjectCard({
           <p
             className={`${dmSans.className} font-light mt-4 transition-colors duration-300`}
             style={{
-              fontSize: '0.8rem',
+              fontSize: '0.85rem',
               lineHeight: 1.6,
-              color: hovered ? 'rgba(27, 63, 171, 0.6)' : 'rgba(237, 224, 196, 0.4)',
+              color: hovered ? 'rgba(27, 63, 171, 0.75)' : 'rgba(237, 224, 196, 0.65)',
             }}
           >
             {t(`${project.slug}.description`)}
@@ -120,13 +120,13 @@ function ProjectCard({
                 key={tag}
                 className={`${dmSans.className} uppercase font-medium transition-colors duration-300`}
                 style={{
-                  fontSize: '0.5rem',
+                  fontSize: '0.625rem',
                   letterSpacing: '0.15em',
                   padding: '3px 8px',
                   border: hovered
-                    ? '1px solid rgba(27, 63, 171, 0.2)'
-                    : '1px solid rgba(237, 224, 196, 0.15)',
-                  color: hovered ? 'rgba(27, 63, 171, 0.5)' : 'rgba(237, 224, 196, 0.4)',
+                    ? '1px solid rgba(27, 63, 171, 0.3)'
+                    : '1px solid rgba(237, 224, 196, 0.25)',
+                  color: hovered ? 'rgba(27, 63, 171, 0.7)' : 'rgba(237, 224, 196, 0.65)',
                 }}
               >
                 {tag}
@@ -150,7 +150,7 @@ function ProjectCard({
                 style={{
                   fontSize: 14,
                   lineHeight: 1,
-                  color: hovered ? '#EDE0C4' : 'rgba(237, 224, 196, 0.3)',
+                  color: hovered ? '#EDE0C4' : 'rgba(237, 224, 196, 0.45)',
                 }}
               >
                 &#8599;
@@ -177,7 +177,7 @@ export default function ProjectsPage() {
             transition={{ duration: 0.6 }}
             className={`${dmSans.className} uppercase font-light block`}
             style={{
-              fontSize: '0.6rem',
+              fontSize: '0.7rem',
               letterSpacing: '0.35em',
               color: '#EDE0C4',
             }}

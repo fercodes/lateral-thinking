@@ -132,8 +132,8 @@ function ServiceRow({
               fontSize: 'clamp(1.2rem, 2.5vw, 2rem)',
               lineHeight: 1,
               color: hovered
-                ? 'rgba(27, 63, 171, 0.3)'
-                : 'rgba(237, 224, 196, 0.25)',
+                ? 'rgba(27, 63, 171, 0.4)'
+                : 'rgba(237, 224, 196, 0.35)',
             }}
           >
             {number}
@@ -155,11 +155,11 @@ function ServiceRow({
           <span
             className={`${dmSans.className} font-light hidden lg:block max-w-[260px] text-right transition-colors duration-300`}
             style={{
-              fontSize: '0.75rem',
+              fontSize: '0.85rem',
               lineHeight: 1.6,
               color: hovered
-                ? 'rgba(27, 63, 171, 0.5)'
-                : 'rgba(237, 224, 196, 0.4)',
+                ? 'rgba(27, 63, 171, 0.7)'
+                : 'rgba(237, 224, 196, 0.65)',
             }}
           >
             {t(`s${number}Desc`)}
@@ -183,7 +183,7 @@ function ServiceRow({
               style={{
                 fontSize: 16,
                 lineHeight: 1,
-                color: hovered ? '#EDE0C4' : 'rgba(237, 224, 196, 0.3)',
+                color: hovered ? '#EDE0C4' : 'rgba(237, 224, 196, 0.45)',
               }}
             >
               &#8599;
@@ -211,7 +211,7 @@ export default function Services() {
             <span
               className={`${dmSans.className} uppercase font-light block`}
               style={{
-                fontSize: '0.6rem',
+                fontSize: '0.7rem',
                 letterSpacing: '0.35em',
                 color: '#EDE0C4',
               }}

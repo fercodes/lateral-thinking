@@ -55,9 +55,9 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
     <span
       className={`${dmSans.className} uppercase font-medium block mb-4`}
       style={{
-        fontSize: '0.55rem',
+        fontSize: '0.7rem',
         letterSpacing: '0.3em',
-        color: 'rgba(237, 224, 196, 0.45)',
+        color: 'rgba(237, 224, 196, 0.65)',
       }}
     >
       {children}
@@ -110,9 +110,9 @@ export default function ProjectPage() {
             href="/projects"
             className={`${dmSans.className} uppercase font-light`}
             style={{
-              fontSize: '0.7rem',
+              fontSize: '0.75rem',
               letterSpacing: '0.2em',
-              color: 'rgba(237, 224, 196, 0.6)',
+              color: 'rgba(237, 224, 196, 0.75)',
             }}
           >
             &larr; {td('backToProjects')}
@@ -137,9 +137,9 @@ export default function ProjectPage() {
               href="/projects"
               className={`${dmSans.className} uppercase font-light`}
               style={{
-                fontSize: '0.6rem',
+                fontSize: '0.7rem',
                 letterSpacing: '0.3em',
-                color: 'rgba(237, 224, 196, 0.5)',
+                color: 'rgba(237, 224, 196, 0.7)',
               }}
             >
               &larr; {td('allProjects')}
@@ -186,9 +186,9 @@ export default function ProjectPage() {
             <span
               className={`${dmSans.className} uppercase font-light`}
               style={{
-                fontSize: '0.6rem',
+                fontSize: '0.7rem',
                 letterSpacing: '0.25em',
-                color: 'rgba(237, 224, 196, 0.5)',
+                color: 'rgba(237, 224, 196, 0.7)',
               }}
             >
               {tp(`${project.slug}.category`)}
@@ -196,9 +196,9 @@ export default function ProjectPage() {
             <span
               className={`${dmSans.className} uppercase font-light`}
               style={{
-                fontSize: '0.6rem',
+                fontSize: '0.7rem',
                 letterSpacing: '0.25em',
-                color: 'rgba(237, 224, 196, 0.3)',
+                color: 'rgba(237, 224, 196, 0.5)',
               }}
             >
               {project.year}
@@ -209,11 +209,11 @@ export default function ProjectPage() {
                   key={tag}
                   className={`${dmSans.className} uppercase font-medium`}
                   style={{
-                    fontSize: '0.5rem',
+                    fontSize: '0.625rem',
                     letterSpacing: '0.15em',
                     padding: '3px 8px',
-                    border: '1px solid rgba(237, 224, 196, 0.15)',
-                    color: 'rgba(237, 224, 196, 0.4)',
+                    border: '1px solid rgba(237, 224, 196, 0.25)',
+                    color: 'rgba(237, 224, 196, 0.65)',
                   }}
                 >
                   {tag}
@@ -252,8 +252,8 @@ export default function ProjectPage() {
               <p
                 className={`${dmSans.className} font-light leading-[1.8]`}
                 style={{
-                  fontSize: '0.9rem',
-                  color: 'rgba(237, 224, 196, 0.7)',
+                  fontSize: '0.95rem',
+                  color: 'rgba(237, 224, 196, 0.8)',
                 }}
               >
                 {tp(`${project.slug}.overview`)}
@@ -289,8 +289,8 @@ export default function ProjectPage() {
               <p
                 className={`${dmSans.className} font-light leading-[1.8]`}
                 style={{
-                  fontSize: '0.9rem',
-                  color: 'rgba(237, 224, 196, 0.7)',
+                  fontSize: '0.95rem',
+                  color: 'rgba(237, 224, 196, 0.8)',
                 }}
               >
                 {tp(`${project.slug}.challenge`)}
@@ -351,8 +351,8 @@ export default function ProjectPage() {
               <p
                 className={`${dmSans.className} font-light leading-[1.8]`}
                 style={{
-                  fontSize: '0.9rem',
-                  color: 'rgba(237, 224, 196, 0.7)',
+                  fontSize: '0.95rem',
+                  color: 'rgba(237, 224, 196, 0.8)',
                 }}
               >
                 {tp(`${project.slug}.solution`)}
@@ -401,7 +401,7 @@ export default function ProjectPage() {
                       className={`${archivo.className} flex-shrink-0`}
                       style={{
                         fontSize: '0.9rem',
-                        color: 'rgba(237, 224, 196, 0.2)',
+                        color: 'rgba(237, 224, 196, 0.35)',
                         lineHeight: 1.8,
                       }}
                     >
@@ -441,7 +441,7 @@ export default function ProjectPage() {
                   className={`${archivo.className} block`}
                   style={{
                     fontSize: 'clamp(1rem, 2vw, 1.5rem)',
-                    color: 'rgba(237, 224, 196, 0.2)',
+                    color: 'rgba(237, 224, 196, 0.35)',
                     lineHeight: 1,
                   }}
                 >
@@ -460,9 +460,9 @@ export default function ProjectPage() {
                 <span
                   className={`${dmSans.className} uppercase font-light block mt-3`}
                   style={{
-                    fontSize: '0.55rem',
+                    fontSize: '0.7rem',
                     letterSpacing: '0.25em',
-                    color: 'rgba(237, 224, 196, 0.4)',
+                    color: 'rgba(237, 224, 196, 0.65)',
                   }}
                 >
                   {tp(`${nextProject.slug}.category`)}

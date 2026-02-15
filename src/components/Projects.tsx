@@ -127,9 +127,9 @@ function ProjectCard({
           <span
             className={`${dmSans.className} uppercase font-light block mt-3 transition-colors duration-300`}
             style={{
-              fontSize: '0.55rem',
+              fontSize: '0.7rem',
               letterSpacing: '0.25em',
-              color: hovered ? 'rgba(27, 63, 171, 0.5)' : 'rgba(237, 224, 196, 0.45)',
+              color: hovered ? 'rgba(27, 63, 171, 0.7)' : 'rgba(237, 224, 196, 0.65)',
             }}
           >
             {tp(`${project.slug}.category`)}
@@ -139,9 +139,9 @@ function ProjectCard({
           <p
             className={`${dmSans.className} font-light mt-4 transition-colors duration-300`}
             style={{
-              fontSize: '0.8rem',
+              fontSize: '0.85rem',
               lineHeight: 1.6,
-              color: hovered ? 'rgba(27, 63, 171, 0.6)' : 'rgba(237, 224, 196, 0.4)',
+              color: hovered ? 'rgba(27, 63, 171, 0.75)' : 'rgba(237, 224, 196, 0.65)',
             }}
           >
             {tp(`${project.slug}.description`)}
@@ -164,7 +164,7 @@ function ProjectCard({
                 style={{
                   fontSize: 14,
                   lineHeight: 1,
-                  color: hovered ? '#EDE0C4' : 'rgba(237, 224, 196, 0.3)',
+                  color: hovered ? '#EDE0C4' : 'rgba(237, 224, 196, 0.45)',
                 }}
               >
                 &#8599;
@@ -194,7 +194,7 @@ export default function Projects() {
             <span
               className={`${dmSans.className} uppercase font-light block`}
               style={{
-                fontSize: '0.6rem',
+                fontSize: '0.7rem',
                 letterSpacing: '0.35em',
                 color: '#EDE0C4',
               }}
@@ -251,7 +251,7 @@ export default function Projects() {
                   <span
                     className="uppercase font-medium"
                     style={{
-                      fontSize: '0.65rem',
+                      fontSize: '0.75rem',
                       letterSpacing: '0.2em',
                       color: '#2A2A2A',
                     }}

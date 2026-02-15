@@ -146,7 +146,7 @@ export default function Contact() {
             <span
               className={`${dmSans.className} uppercase font-light block`}
               style={{
-                fontSize: '0.6rem',
+                fontSize: '0.7rem',
                 letterSpacing: '0.35em',
                 color: '#EDE0C4',
               }}
@@ -221,7 +221,7 @@ export default function Contact() {
                     className={`${dmSans.className} font-light`}
                     style={{
                       fontSize: '0.95rem',
-                      color: 'rgba(237, 224, 196, 0.7)',
+                      color: 'rgba(237, 224, 196, 0.8)',
                       maxWidth: 440,
                       lineHeight: 1.7,
                     }}
@@ -237,9 +237,9 @@ export default function Contact() {
                     <label
                       className={`${dmSans.className} uppercase font-light block mb-2`}
                       style={{
-                        fontSize: '0.55rem',
+                        fontSize: '0.7rem',
                         letterSpacing: '0.3em',
-                        color: 'rgba(237, 224, 196, 0.5)',
+                        color: 'rgba(237, 224, 196, 0.7)',
                       }}
                     >
                       {t('nameLabel')}
@@ -255,7 +255,7 @@ export default function Contact() {
                         border: '1.5px solid rgba(237, 224, 196, 0.2)',
                         borderRadius: 6,
                         padding: '14px 18px',
-                        fontSize: '0.9rem',
+                        fontSize: '0.95rem',
                       }}
                       onFocus={(e) => {
                         e.currentTarget.style.borderColor = '#EDE0C4';
@@ -274,9 +274,9 @@ export default function Contact() {
                     <label
                       className={`${dmSans.className} uppercase font-light block mb-2`}
                       style={{
-                        fontSize: '0.55rem',
+                        fontSize: '0.7rem',
                         letterSpacing: '0.3em',
-                        color: 'rgba(237, 224, 196, 0.5)',
+                        color: 'rgba(237, 224, 196, 0.7)',
                       }}
                     >
                       {t('emailLabel')}
@@ -292,7 +292,7 @@ export default function Contact() {
                         border: '1.5px solid rgba(237, 224, 196, 0.2)',
                         borderRadius: 6,
                         padding: '14px 18px',
-                        fontSize: '0.9rem',
+                        fontSize: '0.95rem',
                       }}
                       onFocus={(e) => {
                         e.currentTarget.style.borderColor = '#EDE0C4';
@@ -311,9 +311,9 @@ export default function Contact() {
                     <label
                       className={`${dmSans.className} uppercase font-light block mb-2`}
                       style={{
-                        fontSize: '0.55rem',
+                        fontSize: '0.7rem',
                         letterSpacing: '0.3em',
-                        color: 'rgba(237, 224, 196, 0.5)',
+                        color: 'rgba(237, 224, 196, 0.7)',
                       }}
                     >
                       {t('messageLabel')}
@@ -329,7 +329,7 @@ export default function Contact() {
                         border: '1.5px solid rgba(237, 224, 196, 0.2)',
                         borderRadius: 6,
                         padding: '14px 18px',
-                        fontSize: '0.9rem',
+                        fontSize: '0.95rem',
                       }}
                       onFocus={(e) => {
                         e.currentTarget.style.borderColor = '#EDE0C4';
@@ -354,7 +354,7 @@ export default function Contact() {
                         border: '1.5px solid #EDE0C4',
                         borderRadius: 6,
                         padding: '14px 40px',
-                        fontSize: '0.7rem',
+                        fontSize: '0.75rem',
                         letterSpacing: '0.25em',
                       }}
                       onMouseEnter={(e) => {
@@ -382,9 +382,9 @@ export default function Contact() {
                 <span
                   className={`${dmSans.className} uppercase font-light block mb-5`}
                   style={{
-                    fontSize: '0.55rem',
+                    fontSize: '0.7rem',
                     letterSpacing: '0.3em',
-                    color: 'rgba(237, 224, 196, 0.5)',
+                    color: 'rgba(237, 224, 196, 0.7)',
                   }}
                 >
                   {t('directContact')}
@@ -425,8 +425,8 @@ export default function Contact() {
                     <span
                       className={`${dmSans.className} font-light block`}
                       style={{
-                        fontSize: '0.7rem',
-                        color: 'rgba(237, 224, 196, 0.4)',
+                        fontSize: '0.8rem',
+                        color: 'rgba(237, 224, 196, 0.65)',
                       }}
                     >
                       {t('whatsappSub')}
@@ -461,8 +461,8 @@ export default function Contact() {
                     <span
                       className={`${dmSans.className} font-light block`}
                       style={{
-                        fontSize: '0.7rem',
-                        color: 'rgba(237, 224, 196, 0.4)',
+                        fontSize: '0.8rem',
+                        color: 'rgba(237, 224, 196, 0.65)',
                       }}
                     >
                       {t('emailAddress')}

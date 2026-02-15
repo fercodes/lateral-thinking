@@ -81,7 +81,7 @@ export default function LanguageSwitcher() {
               onClick={() => switchLocale(l.code)}
               className={`${dmSans.className} font-medium cursor-pointer text-center transition-colors duration-200 hover:bg-[#1B3FAB]`}
               style={{
-                fontSize: '0.7rem',
+                fontSize: '0.75rem',
                 letterSpacing: '0.1em',
                 color: '#EDE0C4',
                 padding: '8px 14px',

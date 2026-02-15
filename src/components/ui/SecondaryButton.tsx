@@ -25,7 +25,7 @@ export default function SecondaryButton({
       onClick={onClick}
       className={`${dmSans.className} uppercase font-medium tracking-[0.15em] cursor-pointer transition-colors duration-300 ${className}`}
       style={{
-        fontSize: '0.7rem',
+        fontSize: '0.75rem',
         padding: '14px 32px',
         background: 'transparent',
         color: '#EDE0C4',

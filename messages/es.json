@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Lateral Thinking",
-    "description": "Agencia de software"
+    "description": "Agencia de desarrollo digital"
   },
   "Navbar": {
     "brand": "Lateral Thinking",
@@ -14,7 +14,7 @@
   },
   "Hero": {
     "canvasText": "Lateral Thinking",
-    "subtitle": "Creamos software a medida que tu equipo y tus clientes van a amar.",
+    "subtitle": "Desarrollamos productos digitales que tu equipo y tus clientes van a amar.",
     "serviceList": "Sitios web | Apps | Diseño UI/UX | Automatización",
     "contactButton": "Contáctanos",
     "workButton": "Ver nuestro trabajo"
@@ -29,10 +29,10 @@
   },
   "About": {
     "label": "Lateral Thinking",
-    "headline1": "Construimos",
-    "headline2": "Software",
-    "body1": "Lateral Thinking es una agencia de software para empresas que se niegan a conformarse. Combinamos ingeniería afilada con estrategia no convencional para crear productos digitales que superan, perduran y se destacan.",
-    "body2": "No solo construimos — pensamos lateralmente. Cada proyecto comienza entendiendo el panorama completo, para que tu tecnología impulse resultados de negocio reales.",
+    "headline1": "Desarrollamos",
+    "headline2": "productos digitales",
+    "body1": "Lateral Thinking es una agencia de desarrollo digital para empresas que se niegan a conformarse. Combinamos ingeniería de precisión con estrategia innovadora para crear productos digitales que superan expectativas, perduran en el tiempo y se destacan entre la competencia.",
+    "body2": "No solo escribimos código — pensamos diferente. Cada proyecto comienza entendiendo los objetivos de negocio, para que la tecnología genere resultados reales.",
     "stat1Value": "50+",
     "stat1Label": "Proyectos Entregados",
     "stat2Value": "98%",
@@ -44,26 +44,26 @@
     "cta": "Sobre Nosotros"
   },
   "Services": {
-    "label": "Lo Que Construimos",
+    "label": "Lo Que Creamos",
     "headline": "Servicios",
     "s01Title": "Sitios Web",
-    "s01Desc": "Sitios de alto rendimiento diseñados para velocidad, conversión e impacto duradero.",
+    "s01Desc": "Sitios rápidos diseñados para conversión e impacto memorable.",
     "s02Title": "Apps Móviles",
-    "s02Desc": "Apps nativas y multiplataforma que se sienten intuitivas desde el primer toque.",
+    "s02Desc": "Apps nativas y multiplataforma con interfaz intuitiva.",
     "s03Title": "Diseño UI/UX",
     "s03Desc": "Diseño basado en investigación que equilibra estética con usabilidad.",
     "s04Title": "Integración de IA",
-    "s04Desc": "Asistentes inteligentes, modelos predictivos y automatización inteligente.",
+    "s04Desc": "Asistentes inteligentes, modelos predictivos y automatización avanzada.",
     "s05Title": "Automatización",
-    "s05Desc": "Pipelines y flujos de trabajo que operan tus procesos en piloto automático.",
+    "s05Desc": "Procesos y flujos de trabajo que operan en piloto automático.",
     "s06Title": "Backend y APIs",
-    "s06Desc": "Arquitecturas escalables y la infraestructura que mantiene todo funcionando.",
+    "s06Desc": "Arquitectura escalable e infraestructura confiable.",
     "s07Title": "Tiendas Ecommerce",
-    "s07Desc": "Tiendas completas con pasarelas de pago y flujos de compra que convierten.",
+    "s07Desc": "Tiendas completas con pasarelas de pago y procesos de compra que convierten.",
     "s08Title": "Sistemas ERP",
-    "s08Desc": "Plataformas unificadas que conectan finanzas, operaciones, RRHH y cadena de suministro.",
+    "s08Desc": "Plataforma unificada para finanzas, operaciones, RRHH y cadena de suministro.",
     "s09Title": "Sistemas CRM",
-    "s09Desc": "Herramientas de gestión de relaciones que ayudan a cerrar más rápido y retener más tiempo."
+    "s09Desc": "Herramientas para gestionar clientes — cierra más rápido, retén por más tiempo."
   },
   "ProjectsSection": {
     "label": "Nuestro Trabajo",
